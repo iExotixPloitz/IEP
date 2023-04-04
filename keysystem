@@ -1,0 +1,153 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Submit = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Check = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local GetKey = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local JoinDiscordServer = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.499599993, 0, 0.5, 0)
+ImageLabel.Size = UDim2.new(0.331200004, 0, 0.400000006, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6906809185"
+ImageLabel.ImageColor3 = Color3.fromRGB(181, 54, 78)
+
+Frame.Parent = ImageLabel
+Frame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Frame.Position = UDim2.new(0.0523593202, 0, 0.055555556, 0)
+Frame.Size = UDim2.new(0, 371, 0, 286)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.0135135138, 0, 0.0659722164, 0)
+TextLabel.Size = UDim2.new(0, 370, 0, 55)
+TextLabel.SizeConstraint = Enum.SizeConstraint.RelativeXX
+TextLabel.Font = Enum.Font.Highway
+TextLabel.Text = "Key Needed!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(105, 42, 54)
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+Submit.Name = "Submit"
+Submit.Parent = Frame
+Submit.BackgroundColor3 = Color3.fromRGB(50, 150, 73)
+Submit.BackgroundTransparency = 0.500
+Submit.Position = UDim2.new(0.554054081, 0, 0.53125, 0)
+Submit.Size = UDim2.new(0, 102, 0, 29)
+Submit.Font = Enum.Font.Roboto
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit.TextScaled = true
+Submit.TextSize = 14.000
+Submit.TextWrapped = true
+
+UICorner.Parent = Submit
+
+Check.Name = "Check"
+Check.Parent = Frame
+Check.BackgroundColor3 = Color3.fromRGB(181, 54, 78)
+Check.BackgroundTransparency = 0.500
+Check.Position = UDim2.new(0.121621624, 0, 0.378472209, 0)
+Check.Size = UDim2.new(0, 290, 0, 39)
+Check.ClearTextOnFocus = false
+Check.Font = Enum.Font.Garamond
+Check.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Check.PlaceholderText = "Put Key"
+Check.Text = ""
+Check.TextColor3 = Color3.fromRGB(255, 255, 255)
+Check.TextScaled = true
+Check.TextSize = 14.000
+Check.TextWrapped = true
+
+UICorner_2.Parent = Check
+
+UIAspectRatioConstraint.Parent = Check
+UIAspectRatioConstraint.AspectRatio = 8.500
+UIAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Height
+
+GetKey.Name = "GetKey"
+GetKey.Parent = Frame
+GetKey.BackgroundColor3 = Color3.fromRGB(139, 56, 72)
+GetKey.BackgroundTransparency = 0.500
+GetKey.Position = UDim2.new(0.191891894, 0, 0.53125, 0)
+GetKey.Size = UDim2.new(0, 111, 0, 29)
+GetKey.Font = Enum.Font.Highway
+GetKey.Text = "Get Key"
+GetKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetKey.TextScaled = true
+GetKey.TextSize = 14.000
+GetKey.TextWrapped = true
+
+UICorner_3.Parent = GetKey
+
+JoinDiscordServer.Name = "Join Discord Server"
+JoinDiscordServer.Parent = Frame
+JoinDiscordServer.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+JoinDiscordServer.BackgroundTransparency = 0.500
+JoinDiscordServer.Position = UDim2.new(0.121621624, 0, 0.670138836, 0)
+JoinDiscordServer.Size = UDim2.new(0, 290, 0, 29)
+JoinDiscordServer.Font = Enum.Font.Highway
+JoinDiscordServer.Text = "Join Discord Server"
+JoinDiscordServer.TextColor3 = Color3.fromRGB(255, 255, 255)
+JoinDiscordServer.TextSize = 22.000
+JoinDiscordServer.TextWrapped = true
+
+UICorner_4.Parent = JoinDiscordServer
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(-0.0972972959, 0, 0.923611104, 0)
+TextLabel_2.Size = UDim2.new(0, 168, 0, 22)
+TextLabel_2.SizeConstraint = Enum.SizeConstraint.RelativeXX
+TextLabel_2.Font = Enum.Font.Highway
+TextLabel_2.Text = "IEP -  HUB!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(105, 42, 54)
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+UISizeConstraint.Parent = Frame
+
+UIAspectRatioConstraint_2.Parent = Frame
+UIAspectRatioConstraint_2.AspectRatio = 1.400
+UIAspectRatioConstraint_2.AspectType = Enum.AspectType.ScaleWithParentSize
+
+UICorner_5.Parent = Frame
+
+UIAspectRatioConstraint_3.Parent = ImageLabel
+UIAspectRatioConstraint_3.AspectRatio = 1.400
+UIAspectRatioConstraint_3.AspectType = Enum.AspectType.ScaleWithParentSize
+end)
