@@ -98,7 +98,7 @@ Section3:CreateButton("Bloxburg", function ()
     Print("2")
 end)
 
-Section3:CreateButton("", function ()
+Section3:CreateButton("MM2", function ()
     Print("3")
 end)
 
@@ -177,7 +177,7 @@ Section3:CreateButton("Bloxburg", function ()
     Print("2")
 end)
 
-Section3:CreateButton("", function ()
+Section3:CreateButton("MM2", function ()
     Print("3")
 end)
 
