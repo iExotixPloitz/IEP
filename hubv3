@@ -325,5 +325,120 @@ elseif game.PlaceId == 142823291 then
     Section1:CreateButton("                                      .gg/drhmb5Yhq4", function ()
         Print("2")
     end)
+    
+
+elseif game.PlaceId == 2753915549 then
+
+    --Main
+    --Bloxfruits
+    
+    local Page1 = windowz:CreatePage("Bloxfruits")
+    
+    
+    local Section1 = Page1:CreateSection("Lots of Features")
+    
+    Section1:CreateButton(" -SpeedHub X-", function ()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
+    end)
+    
+    local Section1 = Page1:CreateSection("BLxzeHub")
+    
+    Section1:CreateButton(" -Blaze X-", function ()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/WindowsXp12/BlxzeRBLX/main/BLxzeHub.lua'))()
+    end)
+    
+    local Section1 = Page1:CreateSection("BEST working HUB")
+    
+    Section1:CreateButton(" -Chiba Hub-", function ()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
+    end)
+
+    local Section1 = Page1:CreateSection("Chiba V2")
+    
+    Section1:CreateButton(" -One X Hub-", function ()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/xOne2/One-x-HUB/main/README.md'))()
+    end)
+    
+    
+    --page 2
+    
+    local Page2 = windowz:CreatePage("Anti AFK")
+    
+    
+    local Section2 = Page2:CreateSection("Dont get Kicked out the Game!")
+    
+    
+    
+    Section2:CreateButton(" -Anti AFK-", function ()
+        loadstring(game:HttpGet('https://pastebin.com/raw/5Wj1sLa2'))()
+    end)
+    
+    local Section2 = Page2:CreateSection("More Anti AFK")
+    
+    Section2:CreateButton(" -Anti AFK V2", function ()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+    end)
+    
+    local Section2 = Page2:CreateSection("If those didnt work Use this!")
+    
+    Section2:CreateButton("-Anti AFK-", function ()
+        loadstring(game:HttpGet('https://pastebin.com/raw/qRvtHtup'))()
+    end)
+    
+    -- Page 3
+    
+    local Page3 = windowz:CreatePage("Info")
+    
+    
+    local Section3 = Page3:CreateSection("Games you can use!")
+    
+    
+    Section3:CreateButton("My Resturant", function ()
+        Print("1")
+    end)
+    
+    Section3:CreateButton("Bloxburg", function ()
+        Print("2")
+    end)
+    
+    Section3:CreateButton("Murder Mystery 2", function ()
+        Print("3")
+    end)
+    
+    Section3:CreateButton("Bloxfruits", function ()
+        Print("4")
+    end)
+    
+    Section3:CreateButton("More to Come!", function ()
+        Print("5")
+    end)
+    
+    -- page 4
+    
+    local Page4 = windowz:CreatePage("Contact")
+    
+    
+    local Section4 = Page4:CreateSection("Get in Contact!")
+    
+    
+    
+    Section4:CreateButton("                                           -! LAK #7391-", function ()
+        Print("1")
+    end)
+    
+    
+    Section4:CreateButton("                                      -OgGamingO #0462-", function ()
+        Print("2")
+    end)
+    
+    local Section1 = Page1:CreateSection("Join Our Discord")
+    
+    Section1:CreateButton("                                      .gg/emebBefdQk", function ()
+        Print("2")
+    end)
+    
+    Section1:CreateButton("                                      .gg/drhmb5Yhq4", function ()
+        Print("2")
+    end)
     end
 
