@@ -1,0 +1,143 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/iExotixPloitz/IEP/main/OrionKey')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Key system", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroText = "IEP Key System" })
+local setclipboard = setclipboard or writeclipboard or write_clipboard
+local debounce = false
+
+OrionLib:MakeNotification({
+	Name = "Logged in!",
+	Content = "You are logged in as "..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+_G.Key = "IEPort"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iExotixPloitz/IEP/main/obsHub"))()
+end
+
+function CorrectKeyNotification()
+    if debounce then
+        return
+   end
+    debounce = true
+    OrionLib:MakeNotification({
+        Name = "Correct Key!",
+        Content = "You Have Entered the Correct Key "..Player.Name.."!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+    wait(3)
+    debounce = false
+end
+
+function InCorrectKeyNotification()
+    if debounce then
+        return
+   end
+   debounce = true
+    OrionLib:MakeNotification({
+        Name = "Incorrect Key!",
+        Content = "You Have Entered the Incorrect Key "..Player.Name..".",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+    wait(5)
+    debounce = false
+end
+
+function CopiedToClipboard()
+    if debounce then
+        return
+   end
+   debounce = true
+    OrionLib:MakeNotification({
+        Name = "Link Copied To Clipboard!",
+        Content = "You can Paste the Link on Your Browser",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+    wait(5)
+    debounce = false
+end
+
+local Tab = Window:MakeTab({
+	Name = "     Key",
+	Icon = "rbxassetid://7527602689",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "    Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "                                           Submit Key",
+	Callback = function()
+      	if _G.KeyInput == _G.Key then
+      	MakeScriptHub()
+        CorrectKeyNotification()
+        wait(1)
+        game.CoreGui.Orion:Destroy()
+        else
+            InCorrectKeyNotification()
+      	end
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "                                     Get the Key From here!"
+})
+
+if setclipboard then
+    Tab:AddButton({
+        Name = "                            -Copy Key Link to Clipboard-",
+        Callback = function()
+            setclipboard("https://onepiecered.co/s?P5u")
+            CopiedToClipboard()
+        end
+ })
+
+ local Tab = Window:MakeTab({
+	Name = "Support Me",
+	Icon = "rbxassetid://7527602689",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Join Our Discord for any Questions!"
+})
+
+if setclipboard then
+    Tab:AddButton({
+        Name = "                      -Copy Discord Link to Clipboard-",
+        Callback = function()
+            setclipboard("https://discord.gg/3tghav56tJ")
+            CopiedToClipboard()
+        end
+ })
+
+ local Section = Tab:AddSection({
+	Name = "My Website for MORE Scripts!"
+})
+
+ if setclipboard then
+    Tab:AddButton({
+        Name = "                    -Copy My Website Link to Clipboard-",
+        Callback = function()
+            setclipboard("https://exotixscripts.com/")
+            CopiedToClipboard()
+        end
+ })
+end
+end
+end
+
+ OrionLib:Init()
